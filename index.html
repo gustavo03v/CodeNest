@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Loja de Apps</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; padding:0; }
+        .app { border:1px solid #000; margin:10px; padding:10px; }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Loja de Apps</h1>
-    </header>
-    
-    <!-- Conteúdo dinâmico carregado por JavaScript -->
-    <section id="content"></section>
+    <div id="app-list"></div>
 
-    <script src="main.js"></script>
+    <script>
+        var apps = []; // Esta lista será preenchida pelo backend
+
+        function renderApps() {
+            var appList = document.getElementById('app-list');
+            appList.innerHTML = '';
+            for (var i = 0; i < apps.length; i++) {
+                var appDiv = document.createElement('div');
+                appDiv.className = 'app';
+                appDiv.innerHTML = '<h2>' + apps[i].name + '</h2><p>' + apps[i].description + '</p>';
+                appList.appendChild(appDiv);
+            }
+        }
+
+        // Aqui você pode adicionar código para buscar a lista de apps do servidor e chamar renderApps
+    </script>
 </body>
 </html>
