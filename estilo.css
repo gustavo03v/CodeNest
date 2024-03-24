@@ -1,0 +1,74 @@
+/* Estilos gerais */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+/* Estilos do formulário */
+form {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input[type="submit"],
+button {
+  background-color: #5cb85c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #4cae4c;
+}
+
+/* Estilos da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
